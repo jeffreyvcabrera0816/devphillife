@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/forum_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_bottom">
+
+    <!--com.pkmmte.view.Circular-->
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/text_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_client_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="left"
+                android:text="CLIENT NAME"
+                android:textColor="@color/darkadobe"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_client_name"
+                android:layout_marginBottom="5dp"
+                android:gravity="left"
+                android:text="Maria Clara"
+                android:textColor="@color/darkadobe" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_date_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name">
+
+                <TextView
+                    android:id="@+id/tv_date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="DATE SUBMITTED"
+                    android:textColor="@color/darkadobe"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_date_label"
+                    android:gravity="left"
+                    android:paddingBottom="5dp"
+                    android:text="January 06, 2016"
+                    android:textColor="@color/darkadobe" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_date_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/rl_date_1">
+
+                <TextView
+                    android:id="@+id/tv_date_label2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="DATE APPROVED"
+                    android:textColor="@color/darkadobe"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_date_submitted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_date_label2"
+                    android:gravity="left"
+                    android:paddingBottom="5dp"
+                    android:text="January 06, 2016"
+                    android:textColor="@color/darkadobe" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_date_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/rl_date_2">
+
+                <TextView
+                    android:id="@+id/tv_date_label3"
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="DATE REJECTED"
+                    android:textColor="@color/darkadobe"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_date_rejected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_date_label3"
+                    android:gravity="left"
+                    android:text="asdasd"
+                    android:textColor="@color/darkadobe" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="active_tab">#114d69</color>
+    <color name="inactive_tab">#0c2f40</color>
+    <color name="darkadobe">#222222</color>
+    <color name="divider">#d6d6cd</color>
+    <color name="colorPrimary">#FAFAFA</color>
+    <color name="colorPrimaryWhite">#092624</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="green_dark">#0e2b2b</color>
+    <color name="green_light">#123b26</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent_bg">#50000000</color>
+    <color name="text_white">#FAFAFA</color>
+    <color name="text_gray">#9E9E9E</color>
+    <color name="green_box">#088443</color>
+
+    <!--Indigo 500-->
+    <color name="primary_500">#3F51B5</color>
+    <!--Indigo 700-->
+    <color name="primary_700">#303F9F</color>
+    <!--Pink 500-->
+    <color name="accent_500">#E91E63</color>
+    <!--Pink 700-->
+    <color name="accent_700">#C2185B</color>
+    <color name="black_trans80">#14000000</color>
+
+    <color name="indicator_unselected">#4D000000</color>
+
+
+    <color name="blue_grey">#455A64</color>
+    <color name="red">#F44336</color>
+    <color name="pink">#E91E63</color>
+    <color name="purple">#9C27B0</color>
+    <color name="deep_purple">#673AB7</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="blue">#2196F3</color>
+    <color name="light_blue">#03A9F4</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="teal">#009688</color>
+    <color name="green">#4CAF50</color>
+    <color name="light_green">#8BC34A</color>
+    <color name="lime">#CDDC39</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="amber">#FFC107</color>
+    <color name="orange">#FF9800</color>
+    <color name="deep_orange">#FF5722</color>
+</resources>

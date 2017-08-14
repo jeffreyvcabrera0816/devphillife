@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/forum_row"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="12dp"
+    android:paddingLeft="12dp"
+    android:paddingTop="12dp">
+
+    <!--com.pkmmte.view.Circular-->
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/forum_image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+       >
+        <com.pkmmte.view.CircularImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:src="@drawable/icn_forum_discussion"
+            android:id="@+id/forumImage"
+             />
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_toRightOf="@+id/forum_image_layout"
+        android:layout_centerVertical="true"
+        android:paddingLeft="17dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/text_info"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_name"
+
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:gravity="left"
+            android:text="Maria Clara"
+            />
+
+        <TextView
+            android:textColor="#6e7e68"
+            android:textSize="11sp"
+
+            android:id="@+id/tv_date"
+            android:layout_below="@id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="left"
+            android:text="January 06, 2016"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/forum_image_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+       >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:src="@android:drawable/ic_menu_more"
+            android:id="@+id/iv_overflow"
+            />
+
+
+    </RelativeLayout>
+
+
+
+<!--
+        android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+-->
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/forum_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+        android:layout_below="@+id/rl"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_comment"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:paddingBottom="6dp"
+            android:textSize="11sp"
+            android:gravity="left"
+            android:text="It has finally been decided that the Philippines has exclusive sovereign rights over the West Philippine Sea (in the South China Sea) and that China’s “nine-dash line” is invalid, according to the United Nations (UN) Arbitral Tribunal."
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:id="@+id/rl_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        android:layout_below="@+id/forum_title"
+        >
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_centerInParent="true"
+            android:layout_height="120dp">
+           <ImageView
+               android:id="@+id/iv_comment"
+               android:layout_centerInParent="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

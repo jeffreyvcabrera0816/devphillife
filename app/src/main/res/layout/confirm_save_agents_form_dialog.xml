@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#1b3139"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/r1"
+
+        android:background="@drawable/bordered_text_dialog_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:background="#1b3139"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/rl1"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:gravity="left"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Save changes?"
+
+
+
+                android:visibility="visible"
+                android:id="@+id/et_email"
+                android:textColor="#dddddd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/underline_only_light"
+            android:layout_width="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rl1"
+            android:id="@+id/rl2"
+
+            android:layout_height="wrap_content">
+
+            <Button
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="SAVE"
+
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/bordered_text_green"
+
+                android:visibility="visible"
+                android:id="@+id/button_password"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/underline_only_light"
+            android:layout_width="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rl2"
+            android:id="@+id/rl3"
+
+            android:layout_height="wrap_content">
+
+            <Button
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="CANCEL"
+
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/bordered_text_dialog"
+
+                android:visibility="visible"
+                android:id="@+id/button_cancel"
+                android:textColor="#70222222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

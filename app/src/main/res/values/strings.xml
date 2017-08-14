@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Teacher\'s Journal</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_community">Community</string>
+    <string name="logo">Journal</string>
+</resources>

@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.tidalsolutions.phillife.testactionbar.MainActivity">
+    <item
+        android:id="@+id/gago"
+        android:orderInCategory="100"
+
+
+        android:icon="@mipmap/icn_mainbar_login_hidden"
+        app:showAsAction="always" />
+</menu>

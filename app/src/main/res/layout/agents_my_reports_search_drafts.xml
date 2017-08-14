@@ -1,0 +1,365 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android2="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:background="#1b313a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_form_id"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_form_id_label"
+
+                            android:textSize="10sp"
+                            android:textColor="#dddddd"
+                            android:text="FORM ID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/tv_form_id"
+
+                            android:background="@drawable/bordered_text_dialog_semi"
+                            android:layout_width="match_parent"
+                            android:textColor="#222222"
+                            android:text="AGF7223DS"
+                            android:textSize="14sp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tsv_forasdm_id_label"
+
+                            android:textSize="10sp"
+                            android:text="FORM ID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/tv_fasdasorm_id"
+
+                            android:background="@drawable/bordered_text_dialog_semi"
+                            android:layout_width="wrap_content"
+                            android:textColor="#222222"
+                            android:textSize="13sp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tsv_forasddm_id_label"
+
+                            android:textSize="10sp"
+                            android:text="FORM ID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/tv_fasddasorm_id"
+
+                            android:background="@drawable/bordered_text_dialog_semi"
+                            android:layout_width="wrap_content"
+                            android:textColor="#222222"
+                            android:textSize="13sp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_client_name"
+                android:layout_below="@+id/rl_form_id"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_client_name_label"
+                    android:layout_alignParentTop="true"
+                    android:textSize="10sp"
+                    android:text="CLIENT NAME"
+                    android:textColor="#dddddd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/tv_client_name"
+                    android:textColor="#222222"
+                    android:text="JUAN TAMAD"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/tv_client_name_label"
+                    android:background="@drawable/bordered_text_dialog_semi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_date"
+                android:layout_below="@+id/rl_client_name"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginRight="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/tv_date_from_label"
+
+                            android:textSize="10sp"
+                            android:text="DATE FROM"
+                            android:textColor="#dddddd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/tv_date_from_id"
+
+                            android:background="@drawable/bordered_text_dialog_semi"
+                            android:layout_width="match_parent"
+                            android:textColor="#222222"
+                            android:textSize="13sp"
+                            android:text="MMM/DD/YYYY"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/tv_date_to_label"
+
+                            android:textSize="10sp"
+                            android:text="DATE TO"
+                            android:textColor="#dddddd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                        <EditText
+                            android:id="@+id/tv_date"
+
+                            android:background="@drawable/bordered_text_dialog_semi"
+                            android:layout_width="match_parent"
+                            android:textColor="#222222"
+                            android:textSize="13sp"
+                            android:text="MMM/DD/YYYY"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_status"
+                android:layout_below="@+id/rl_form_id"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_status_label"
+                    android:layout_alignParentTop="true"
+                    android:textSize="10sp"
+                    android:text="CLIENT NAME"
+                    android:textColor="#dddddd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/tv_status"
+                    android:textColor="#222222"
+                    android:text="JUAN TAMAD"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/tv_status_label"
+                    android:background="@drawable/bordered_text_dialog_semi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+
+
+            <!--asdasdas-->
+            <RelativeLayout
+                android:id="@+id/rl_button_search"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:textSize="10sp"
+                            android:gravity="center"
+                            android:text="SEARCH"
+                            android:background="@drawable/button_text_green"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tsv_foraasdasdsdm_id_label"
+
+                            android:textSize="10sp"
+                            android:text="FORM ID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/tv_fasdaasdasdsorm_id"
+
+                            android:background="@drawable/bordered_text_dialog_semi"
+                            android:layout_width="wrap_content"
+                            android:textColor="#222222"
+                            android:textSize="13sp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tsv_fasdorasddm_id_label"
+
+                            android:textSize="10sp"
+                            android:text="FORM ID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/tv_fasasdddasorm_id"
+
+                            android:background="@drawable/bordered_text_dialog_semi"
+                            android:layout_width="wrap_content"
+                            android:textColor="#222222"
+                            android:textSize="13sp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <!--asdasdasd-->
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout >

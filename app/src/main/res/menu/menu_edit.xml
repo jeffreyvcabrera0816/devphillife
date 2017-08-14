@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.tidalsolutions.phillife.testactionbar.MainActivity">
+    <item
+        android:id="@+id/edit"
+        android:orderInCategory="100"
+        android:title="update profile"
+        android:icon="@drawable/icn_edit_profile"
+        app:showAsAction="ifRoom" />
+</menu>

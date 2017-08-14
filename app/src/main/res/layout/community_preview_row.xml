@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/forum_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+  <!--  com.pkmmte.view.Circular-->
+  <!--  android:src="@drawable/portal_profile_sample"-->
+    <RelativeLayout
+        android:id="@+id/forum_image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+       >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <com.pkmmte.view.CircularImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:visibility="visible"
+            android:src="@drawable/portal_profile_sample"
+            android:id="@+id/forumImage"
+             />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:id="@+id/text_info"
+        android:layout_toRightOf="@+id/forum_image_layout"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/forum_image_notification"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_schedule"
+            android:textColor="#6e7e68"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:gravity="left"
+            android:text="7th January 2016 |  01:00 AM"
+            />
+
+        <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/tv_title"
+            android:layout_below="@id/tv_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:gravity="left"
+            android:singleLine="false"
+            android:maxLength="90"
+            android:ellipsize="end"
+            android:maxLines="3"
+
+            android:text=""
+            />
+        <TextView
+            android:textColor="#6e7e68"
+            android:id="@+id/tv_by"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:gravity="left"
+            android:text="By User"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/forum_image_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+       >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/icn_forum_discussion"
+            android:id="@+id/iv"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0"
+            android:textSize="10sp"
+
+            android:layout_centerInParent="true"
+           android:paddingRight="5dp"
+            android:id="@+id/tv_number_of_comments" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/forum_image_clip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/forum_image_notification"
+        android:layout_centerVertical="true"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:id="@+id/ix"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
